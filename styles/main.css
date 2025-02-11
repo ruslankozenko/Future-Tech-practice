@@ -411,12 +411,6 @@ button[aria-label]::before {
 .icon--yellow-arrow::after {
   background-image: url("../../icons/arrow-top-right_yellow.svg");
 }
-.icon--yellow-eye::after {
-  background-image: url("../../icons/eye_yellow.svg");
-}
-.icon--gray-arrow-down::after {
-  background-image: url("../../icons/arrow-down_gray.svg");
-}
 
 .logo {
   max-width: clamp(7.875rem, 6.8073347107rem + 4.3801652893vw, 11.1875rem);
