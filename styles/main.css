@@ -284,6 +284,60 @@ svg * {
   }
 }
 
+.full-vw-line {
+  position: relative;
+}
+.full-vw-line::before, .full-vw-line::after {
+  position: absolute;
+  width: calc((var(--100vw) - var(--container-width)) / 2);
+  height: 0.0625rem;
+  background-color: var(--color-dark-15);
+}
+.full-vw-line--top::before {
+  content: "";
+  bottom: 100%;
+}
+.full-vw-line--bottom::after {
+  content: "";
+  top: 100%;
+}
+.full-vw-line--left::before, .full-vw-line--left::after {
+  right: 100%;
+}
+.full-vw-line--right::before, .full-vw-line--right::after {
+  left: 100%;
+}
+
+.circle-icon {
+  --circleSize: 3.25rem;
+  --circleMarginLeft: 1.25rem;
+  position: relative;
+  min-height: var(--circleSize);
+  padding-right: calc(var(--circleSize) + var(--circleMarginLeft));
+}
+@media (width <= 90.06125rem) {
+  .circle-icon {
+    --circleSize: 2.75rem;
+    --circleMarginLeft: 0.875rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  .circle-icon {
+    --circleSize: 2.5rem;
+  }
+}
+.circle-icon::after {
+  width: var(--circleSize);
+  height: var(--circleSize);
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  content: "";
+  right: 0;
+  background: url("../../icons/arrow-top-right_black.svg") center no-repeat var(--color-accent);
+  border-radius: 50%;
+}
+
 html.is-lock {
   overflow: hidden;
 }
