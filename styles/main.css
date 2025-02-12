@@ -1092,7 +1092,7 @@ button[aria-label]::before {
     width: var(--100vw);
     margin-left: calc(var(--container-padding-x) * -1);
     padding: 6.25rem 2.5rem 2.5rem;
-    background-image: url("/images/resources-preview/bg_tablet.png");
+    background-image: url("/Future-Tech-practice/images/resources-preview/bg_tablet.png");
     background-size: contain;
   }
 }
