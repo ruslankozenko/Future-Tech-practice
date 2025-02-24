@@ -475,6 +475,12 @@ button[aria-label]::before {
 .icon--yellow-arrow::after {
   background-image: url("/Future-Tech-practice/icons/arrow-top-right_yellow.svg");
 }
+.icon--yellow-eye::after {
+  background-image: url("/Future-Tech-practice/icons/eye_yellow.svg");
+}
+.icon--gray-arrow-down::after {
+  background-image: url("/Future-Tech-practice/icons/arrow-down_gray.svg");
+}
 
 .logo {
   max-width: clamp(7.875rem, 6.8073347107rem + 4.3801652893vw, 11.1875rem);
@@ -1587,6 +1593,28 @@ button[aria-label]::before {
 @media (width <= 63.99875rem) {
   .blog-card__link {
     grid-area: link;
+  }
+}
+
+.download-info {
+  display: inline-grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  column-gap: 3.125rem;
+}
+@media (width <= 90.06125rem) {
+  .download-info {
+    column-gap: 1.875rem;
+  }
+}
+.download-info__team {
+  --personImageSize: 3.125rem;
+  background-color: var(--color-dark);
+  border-radius: 0.75rem;
+}
+@media (width <= 90.06125rem) {
+  .download-info__team {
+    --personImageSize: 2.5rem;
   }
 }
 
